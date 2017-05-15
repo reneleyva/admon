@@ -6,6 +6,7 @@
             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/estilos.css">
+            <link rel="stylesheet" href="css/index-style.css">
     </head>
 
 
@@ -27,7 +28,7 @@
                             <span class="icon-bar"></span>
 
                         </button>
-                        <a class="marcarHome nombre LetraColor navbar-brand" href="/RN/" >Home</a>
+                        <a class="marcarHome nombre LetraColor navbar-brand" href="/RN/" ><img id="logo" src="/RN/images/hoja.png"></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -70,44 +71,18 @@
             </div> <!-- /.container-fluid -->
 
 
-        <!-- Nuevo renglon -->
-        <div class="container">
-            <section class="row">
-                <div class="container">
-                    <!-- Nueva linea -->
-                    <hr size="10" style="color: #5C946E;"/>
-                </div>
-            </section>  
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div class="texto-header">
+                <h2 class="text-center"><b>Recursos Naturales</b> </h2>
+                <br>                        
+                   <p>La materia de Recursos Naturales es una asignatura obligatoria del plan de estudios actual  (1997) de la carrera de Biología.</p> 
+                   <p>El objetivo es analizar la problemática socio-ambiental, principalmente con un enfoque nacional el cual se cubre a partir de la revisión teórica de conceptos, el desarrollo de un trabajo semestral y una salida a campo.</p>
+                   <p>Desde sus inicios, los profesores que imparten el curso conforman el Colegio de la materia, y en conjunto revisan los contenidos, la literatura, los alcances del trabajo semestral entre otros.</p>
+            </div>
         </div>
-    
-    <div class="container">
-        <br>
-        <section class="row">
-        <!-- Contenedor 1 -->
-            <article class="col-sm-4 col-md-5 col-md-lg-5 text-justify">
-                <div class="">
-                  <img src="/RN/images/laboratorio.jpg" class="img-responsive center-block img-rounded" alt="...">
-                  <div>
-
-                  </div>
-                </div>
-            </article>
-            <article>
-                <!-- Contenedor 2 -->
-                <div class="col-sm-8 col-md-7 col-md-lg-7 text-justify">
-                    <article>
-                        <h2 class="text-center"><b>Recursos Naturales</b> </h2>
-                        <br>                        
-                        <h4>
-                           <p>La materia de Recursos Naturales es una asignatura obligatoria del plan de estudios actual  (1997) de la carrera de Biología.</p> 
-                           <p>El objetivo es analizar la problemática socio-ambiental, principalmente con un enfoque nacional el cual se cubre a partir de la revisión teórica de conceptos, el desarrollo de un trabajo semestral y una salida a campo.</p>
-                           <p>Desde sus inicios, los profesores que imparten el curso conforman el Colegio de la materia, y en conjunto revisan los contenidos, la literatura, los alcances del trabajo semestral entre otros.</p>
-                        </h4>
-                    </article>
-                    </div> 
-            </article>
-          </section>  
     </div>
+    
     
     <!-- Nueva linea -->
     <hr size="10" style="color: #5C946E;"/>
@@ -118,7 +93,7 @@
         <!-- Contenedor 1 -->
           <div class="col-sm-6 col-md-3 text-justify">
             <div class="thumbnail ">
-              <img src="/RN/images/campo.jpg" class="img-circle">
+              <img src="/RN/images/professor.png">
               <div class="caption">
                 <h4 class="text-center"><b>Profesores</b></h4>
                 <h4 class="ajusteHome">
@@ -133,7 +108,7 @@
         <!-- Contenedor 2 -->
           <div class="col-sm-6 col-md-3 text-justify">
             <div class="thumbnail ">
-              <img src="/RN/images/campo.jpg" class="img-circle">
+              <img src="/RN/images/calendar.png" >
               <div class="caption">
                 <h4 class="text-center"><b>Trabajos semestrales</b></h4>
                 <h4 class="ajusteHome">
@@ -148,7 +123,7 @@
         <!-- Contenedor 3 -->
           <div class="col-sm-6 col-md-3 text-justify">
             <div class="thumbnail ">
-              <img src="/RN/images/campo.jpg" class="img-circle">
+              <img src="/RN/images/open-book.png" >
               <div class="caption">
                 <h4 class="text-center"><b>Acervo bibliográfico</b></h4>
                 <h4 class="ajusteHome">
@@ -164,7 +139,7 @@
         <!-- Contenedor 4 -->
           <div class="col-sm-6 col-md-3 text-justify">
             <div class="thumbnail ">
-              <img src="/RN/images/campo.jpg" class="img-circle">
+              <img src="/RN/images/camping.png">
               <div class="caption">
                 <h4 class="text-center"><b>Salidas a campo</b></h4>
                 <h4 class="ajusteHome">

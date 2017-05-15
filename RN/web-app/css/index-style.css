@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12pt;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+	border: none;
+	width: 100%;
+}
+
+.navbar #logo {
+	height: 50px;
+	width: 50px;
+	margin-top: -15px;
+}
+
+#header {
+	height:90%;
+	display:table;
+	width: 100%;
+	// padding: 0;
+	background: url(../../RN/images/laboratorio.jpg) no-repeat no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header .texto-header {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 50em;
+	padding: 10px 10px 10px 20px;
+	margin: 0 auto;
+	position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#header .texto-header p {
+	font-size: 16pt;
+}
+
+@media (max-width: 1000px) { 
+	#header .texto-header {
+		width: 40em;
+	}
+
+	#header .texto-header p {
+		font-size: 14pt;
+	}
+}
+
+@media (max-width: 700px) { 
+	#header .texto-header {
+		width: 30em;
+	}
+
+	#header .texto-header p {
+		font-size: 12pt;
+	}
+}
+h2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+}
+
+.thumbnail h4 {
+	font-family: 'Rubik', sans-serif;
+}

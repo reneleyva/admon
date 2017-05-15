@@ -5,7 +5,7 @@ dataSource {
     dialect = org.hibernate.dialect.PostgreSQLDialect
     username = "postgres"
     // Developer
-    password = "aaron"
+    password = "apsus"
     // Test
     //password = "eco"
     //password ="qwerty"
@@ -25,7 +25,7 @@ environments {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             // Aaron
-            url = "jdbc:postgresql://localhost:5433/RN_development"
+            url = "jdbc:postgresql://localhost:5432/RN_developer"
             // Rafael
             //url = "jdbc:postgresql://localhost:5432/RN"
             // Ecosistemas

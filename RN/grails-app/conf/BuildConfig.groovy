@@ -54,8 +54,15 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        // plugins for the build system only
         build ":tomcat:7.0.55.3" // or ":tomcat:8.0.22"
+        //Scaffolding
+        compile "org.grails.plugins:scaffolding:2.1.2"   
+        // permiso roles
+        compile "org.grails.plugins:spring-security-core:2.0.0"
+        //email
+        compile "org.grails.plugins:mail:1.0.7"
+        // plugins for the build system only
+        
 
         // plugins for the compile step
         compile ":scaffolding:2.1.2"
@@ -74,11 +81,6 @@ grails.project.dependency.resolution = {
         //compile ":coffee-asset-pipeline:1.8.0"
         //compile ":handlebars-asset-pipeline:1.3.0.3"
         
-        //Scaffolding
-        compile "org.grails.plugins:scaffolding:2.1.2"   
-        // permiso roles
-        compile "org.grails.plugins:spring-security-core:2.0.0"
-        //email
-        compile "org.grails.plugins:mail:1.0.7"
+        
     }
 }

@@ -1,145 +1,124 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Recursos Naturales</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
+<head>
+	<meta name='layout' content='main'/>
+	<title><g:message code="springSecurity.login.title"/></title>
+	<style type='text/css' media='screen'>
+	#login {
+		margin: 15px 0px;
+		padding: 0px;
+		text-align: center;
+	}
 
-    <body>
-         <!-- Barra de Navegacion -->
-        <div class="container-fluid">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid ">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
+	#login .inner {
+		width: 340px;
+		padding-bottom: 6px;
+		margin: 60px auto;
+		text-align: left;
+		border: 1px solid #aab;
+		background-color: #f0f0fa;
+		-moz-box-shadow: 2px 2px 2px #eee;
+		-webkit-box-shadow: 2px 2px 2px #eee;
+		-khtml-box-shadow: 2px 2px 2px #eee;
+		box-shadow: 2px 2px 2px #eee;
+	}
 
-                        </button>
-                        <a class="active nombre LetraColor navbar-brand" href="/RN" >Home</a>
-                    </div>
-                    <!-- Barra de Navegacion izquierda -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/RecursosNaturales/profesor/index" class="LetraColor">Profesores</a></li>
-                            <li><a href="/RecursosNaturales/trabajo/index" class="LetraColor">Trabajos Semestrales</a></li>
-                            <li><a href="#" class="LetraColor">Acervo Bibliográfico</a></li>
-                            <li><a href="#" class="LetraColor">Salidas a Campo</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                        <!-- Barra de Navegacion derecha -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="LetraColor">¿Quiénes somos?</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle LetraColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Salir</a></li>
-                                    <li><a href="#">Configuración</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.navbar-header -->
-            </nav> <!-- /.navbar-default -->
-        </div> <!-- Fin de barra  --> 
+	#login .inner .fheader {
+		padding: 18px 26px 14px 26px;
+		background-color: #f7f7ff;
+		margin: 0px 0 14px 0;
+		color: #2e3741;
+		font-size: 18px;
+		font-weight: bold;
+	}
 
+	#login .inner .cssform p {
+		clear: left;
+		margin: 0;
+		padding: 4px 0 3px 0;
+		padding-left: 105px;
+		margin-bottom: 20px;
+		height: 1%;
+	}
 
-<!-- ///////////////////////////////////////////////////////////////-->
-<!--	login 	-->
-	<section id="login">
-        <div class="container">
-        	<div class="row">
-            <div class="col-xs-12">
-            <div class="form-wrap">
-            	<h3 class="text-center">Iniciar sesión</h3>
-                        <g:if test='${flash.message}'>
-                            <div class='login_message'>${flash.message}</div>
-                        </g:if>
+	#login .inner .cssform input[type='text'] {
+		width: 120px;
+	}
 
-                        <form action='${postUrl}' method='POST' id='loginForm' class='cssform form' autocomplete='off' role="form">
-                        <div class="form-group">
-                        
-                            <p>
-                            <h4 for='username' class="sr-only">
-                                <h1>Correo</h1> 
-                            </h4>
-                            <input type='email' class='form-control' name='j_username' id='username' placeholder="correo@ejemplo.com"/>
-                            </p>
-                         </div>
-                            <p>
-                            <h4 for='password'>
-                                <h1>Contraseña</h1>
-                            </h4>
-                            <input type='password' class='form-control' name='j_password' id='password' placeholder="*********"/>
-                            </p>
-                            <p>
-                                <input type='submit' id="submit" value='ingresar'class="btn btn-custom btn-lg btn-block"/>
-                            </p>
-                            <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">¿Olvidaste tu contraseña?</a>
-                            
-                        </form>
+	#login .inner .cssform label {
+		font-weight: bold;
+		float: left;
+		text-align: right;
+		margin-left: -105px;
+		width: 110px;
+		padding-top: 3px;
+		padding-right: 10px;
+	}
 
-                            <g:form controller="correo" action="recupera">
-                            	<h1>${flash.message}</h1>
-                    			<br>Nombre : <g:field type="text" name="nombre"/><br>
-                    			Email  : <g:field type="email" name="email"/><br>
-    	                		
-        		            	<g:submitButton name="submit" value="Recuperar contra"/>
-                			</g:form>
-                        </div>
-                        </div> <!-- /.col-xs-12 -->
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
+	#login #remember_me_holder {
+		padding-left: 120px;
+	}
 
-                    </section>
-                
-                <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">
-                                    <span aria-hidden="true">×</span>
-                                    <span class="sr-only">Close</span>
-                                </button>
-                                <h4 class="modal-title text-center">Restablecer contraseña</h4>
-                            </div>
-                            <div class="modal-body text-left">
-                                <p>Proporciona tu correo electrónico</p>
-                                <input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-custom">Restablecer</button>
-                            </div>
-                        </div> <!-- /.modal-content -->
-                    </div> <!-- /.modal-dialog -->
-                </div> <!-- /.modal -->      
+	#login #submit {
+		margin-left: 15px;
+	}
 
+	#login #remember_me_holder label {
+		float: none;
+		margin-left: 0;
+		text-align: left;
+		width: 200px
+	}
 
-            
+	#login .inner .login_message {
+		padding: 6px 25px 20px 25px;
+		color: #c33;
+	}
 
-        </div>
-        
+	#login .inner .text_ {
+		width: 120px;
+	}
 
+	#login .inner .chk {
+		height: 12px;
+	}
+	</style>
+</head>
 
-<!-- ///////////////////////////////////////////////////////////////-->        
-        <script type='text/javascript'>
-            (function() {
-            document.forms['loginForm'].elements['j_username'].focus();
-            })();
-        </script>
+<body>
+<div id='login'>
+	<div class='inner'>
+		<div class='fheader'><g:message code="springSecurity.login.header"/></div>
 
-                <!-- Pie de Página -->
-        <footer class="container-fluid textoColor piePagina espacio_02">
-            <img src="../images/Miztli.png" alt="S.C.I." class="estiloLogo img-responsive">
-            <h6 class="text-center funteLetra">Desarrollado por Miztli, Scientific Computational Intelligence</h6>
-        </footer>
+		<g:if test='${flash.message}'>
+			<div class='login_message'>${flash.message}</div>
+		</g:if>
 
-                <!-- Scripts -->
-        <script src="../js/jquery-3.1.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>     
-    </body>
+		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
+			<p>
+				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
+				<input type='text' class='text_' name='j_username' id='username'/>
+			</p>
+
+			<p>
+				<label for='password'><g:message code="springSecurity.login.password.label"/>:</label>
+				<input type='password' class='text_' name='j_password' id='password'/>
+			</p>
+
+			<p id="remember_me_holder">
+				<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/>
+				<label for='remember_me'><g:message code="springSecurity.login.remember.me.label"/></label>
+			</p>
+
+			<p>
+				<input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
+			</p>
+		</form>
+	</div>
+</div>
+<script type='text/javascript'>
+(function() {
+	document.forms['loginForm'].elements['j_username'].focus();
+})();
+</script>
+</body>
 </html>
