@@ -1,0 +1,106 @@
+.navbar-default{
+    background-color: #007800 !important;
+    margin-bottom: 0px;
+    color:#061539;
+}
+.marcarHome{
+    background-color: #004400 !important;
+}
+.nombre{
+    font-size: 20px;
+}
+.LetraColor{
+    color: #fff !important;
+}       
+
+.main{
+    background-color: #EAF0CE
+}
+.submenu{
+    background-color: #E2C391
+}
+.columna-azul{
+    background-color: #7D8491;
+    color: #fff;
+}.columna-azul-2{
+    background-color: #AD8491;
+    color: #fff;
+}
+.columna-marron{
+    background-color: #A9E4EF;
+}
+.piePagina{
+    background-color: #007800 !important;
+    color: #fff !important;
+}
+.foto{
+    width: 100%;
+    height: auto;
+}
+.LetraGrande{
+    font-size: 60px;
+}
+.espacios{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.fondoColor{
+    background-color: #A7ADC6;
+}
+.textoColor{
+    background-color: #0BC9CD; 
+}
+.espacio_02{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px
+}
+.funteLetra{
+    font-family: LetraFin;
+    color: #fff;
+}
+
+@font-face{
+    url:"fonts/BebasNeue.otf";
+    font-family: LetraFin;
+}
+
+.imagenesHeader{
+    width: 250px;
+    height: 720px;
+}
+.estiloLogo{
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+}
+.encabezadoFila{
+    background-color:#BEFFB4;
+    color:#061539;
+}
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+}
+
+.LetraIndicador{
+    color: #BF4E30 !important;
+} 
+
+.ajustePagina{
+	min-height: 500px;
+}
+
+.ajusteHome{
+	height: 150px;
+}
+
+.colorFlecha{
+	color: #0000 !important;
+}
+.colorError{
+	color: #FF495C !important;
+}
