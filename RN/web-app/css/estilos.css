@@ -1,8 +1,15 @@
-.navbar-default{
-    background-color: #007800 !important;
-    margin-bottom: 0px;
-    color:#061539;
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12pt;
+	font-family: 'Roboto', sans-serif;
 }
+
+
 .marcarHome{
     background-color: #004400 !important;
 }
@@ -103,4 +110,37 @@
 }
 .colorError{
 	color: #FF495C !important;
+}
+
+
+.navbar {
+	border: none;
+	width: 100%;
+        background: green;
+}
+
+.navbar #logo {
+	height: 50px;
+	width: 50px;
+	margin-top: -15px;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+form  input[type="submit"] {
+    float: right;
+}
+
+#login {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 14pt;
+}
+
+#login input[type="submit"] {
+    text-align: right;
 }

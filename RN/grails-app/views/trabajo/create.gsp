@@ -20,7 +20,7 @@
                             <span class="icon-bar"></span>
 
                         </button>
-                        <a class="active nombre LetraColor navbar-brand" href="/RN" >Home</a>
+                        <a class="active nombre LetraColor navbar-brand" href="/RN" ><img id="logo" src="/RN/images/hoja.png"></a>
                     </div>
                     <!-- Barra de Navegacion izquierda -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -77,9 +77,8 @@
                         <fieldset class="form">
                             <g:render template="form"/>
                         </fieldset>
-                        <div class="btn">
-                            <g:submitButton name="create LetraColor" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-                        </div>
+                       
+                            <g:submitButton name="create LetraColor" class="btn btn-success btn-lg save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                     </g:form>
                 </div>
             </div>
