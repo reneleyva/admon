@@ -23,7 +23,7 @@
                             <span class="icon-bar"></span>
 
                         </button>
-                        <a class="activeHome nombre LetraColor navbar-brand" href="/RN" >Home</a>
+                        <a class="activeHome nombre LetraColor navbar-brand" href="/RN" ><img id="logo" src="/RN/images/hoja.png"></a>
                     </div>
                     <!-- Barra de Navegacion izquierda -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,8 +37,8 @@
                         <!-- Barra de Navegacion derecha -->
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle LetraColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="message">
-                                    Usuario ${flash.message} <span class="caret"></span></a>
+                                <!--<a href="#" class="dropdown-toggle LetraColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="message">
+                                    Usuario ${flash.message} <span class="caret"></span></a>-->
                                 <ul class="dropdown-menu">
                                     <li><a href="/RN/sec/index">iniciar</a></li>
                                     <li><a href="/RN/sec/salida">Salir</a></li>
@@ -82,5 +82,8 @@
             <h6 class="text-center funteLetra">Desarrollado por Miztli, Scientific Computational Intelligence</h6>
 
         </footer>
+        
+         <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -8,14 +8,17 @@
 <body>
 <div >
 	
-            <div class='fheader'><h2 class="text-center"><g:message code="springSecurity.login.header"/></h2></div>
+           
 
-		<g:if test='${flash.message}'>
-			<div class='login_message'>${flash.message}</div>
-		</g:if>
+		
 
 		<form id='login' action='${postUrl}' method='POST' id='loginForm' class=' cssform' autocomplete='off'>
-				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label><br>
+                                <div class='fheader'><h2 class=""><g:message code="springSecurity.login.header"/></h2></div>
+                                <g:if test='${flash.message}'>
+                                        <div id='login_message'>${flash.message}</div>
+                                </g:if>
+                
+                                <label for='username'><g:message code="springSecurity.login.username.label"/>:</label><br>
 				<input type='text' class='text_' class="form-control" name='j_username' id='username'/><br><br>
 		
 

@@ -24,7 +24,6 @@ html, body {
 	height:90%;
 	display:table;
 	width: 100%;
-	// padding: 0;
 	background: url(../../RN/images/laboratorio.jpg) no-repeat no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;

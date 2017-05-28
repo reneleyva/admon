@@ -135,12 +135,38 @@ form  input[type="submit"] {
 }
 
 #login {
-    border: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 14pt;
+    /*border: 1px solid black;*/
+}
+
+#login input {
+    text-align: left;
+}
+
+#login #login_message {
+    color: red;
+}
+/*Registro*/ 
+#registro {
     width: 300px;
     margin: 0 auto;
     font-size: 14pt;
 }
+#registro input {
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-#login input[type="submit"] {
+#registro form {
+     width: 300px;
+}
+#registro button {
     text-align: right;
+    background-color: green;
+    color: white;
+    font-size: 14pt;
+    margin-top: 15px;
+    float: right;
 }

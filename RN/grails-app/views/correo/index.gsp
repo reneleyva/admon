@@ -8,15 +8,16 @@
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		  <g:form action="enviar">
-                    Nombre : <g:field type="text" name="nombre"/><br>
-                    Email  : <g:field type="email" name="email"/><br>
-                    Motivos: <g:field type="text" name="motivos"/><br>
-                    
-                    <g:submitButton name="submit" value="Enviar datos"/>
+            <div id="registro">
+                <h2>Registrarse</h2>
+		  <g:form action="enviar" >
+                      <b>Nombre :</b> <br><g:field type="text" name="nombre"/><br>
+                      <b> Email  :</b> <br><g:field type="email" name="email"/><br>
+                      <b> Motivos  :</b> <br><g:field type="text" name="motivos"/><br>
+                      <button type="submit" class="btn btn-default">Enviar</button>
+                   <!-- <g:submitButton name="submit" value="Enviar datos"/>-->
                 </g:form>   
-                    <div class="btn">
-                        <a href="/RN/correo/show">ver Correo</a>
-                    </div>
+                        <!--<a href="/RN/correo/show" class="btn btn-default">Ver Correo</a>-->
+            </div>
 	</body>
 </html>
